@@ -1,0 +1,16 @@
+# Archivos compilados de Java
+*.class
+
+# Archivos de NetBeans
+nbproject/
+build/
+build.xml
+manifest.mf
+
+# Archivos de configuración
+*.properties
+*.DS_Store
+
+# Carpetas de salida
+dist/
+build/
