@@ -20,14 +20,14 @@ public class Main {
             int q = scanner.nextInt();
             
             if (p <= 0 || q <= 0) {
-                System.out.println("Error: Ambos números deben ser positivos.");
+                System.out.println("Error: Ambos numeros deben ser positivos.");
                 return;
             }
             
             Collatz.verificarIntervalo(p, q);
             
         } catch (Exception e) {
-            System.out.println("Error: Debe ingresar números enteros válidos.");
+            System.out.println("Error: Debe ingresar numeros enteros validos.");
         }
         
         scanner.close();

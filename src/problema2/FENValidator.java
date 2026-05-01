@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package problema2;
 
 import java.util.regex.Pattern;
@@ -14,7 +9,7 @@ public class FENValidator {
     
     public static boolean validar(String fen) {
         if (fen == null || fen.trim().isEmpty()) {
-            System.out.println("Error: Cadena vacía o nula");
+            System.out.println("Error: Cadena vacia o nula");
             return false;
         }
         
@@ -28,17 +23,17 @@ public class FENValidator {
         if (!validarTablero(partes[0])) return false;
         
         if (!partes[1].equals("w") && !partes[1].equals("b")) {
-            System.out.println("Error: Turno '" + partes[1] + "' inválido");
+            System.out.println("Error: Turno '" + partes[1] + "' invalido");
             return false;
         }
         
         if (!PATRON_ENROQUE.matcher(partes[2]).matches()) {
-            System.out.println("Error: Enroque '" + partes[2] + "' inválido");
+            System.out.println("Error: Enroque '" + partes[2] + "' invalido");
             return false;
         }
         
         if (!PATRON_AL_PASO.matcher(partes[3]).matches()) {
-            System.out.println("Error: Casilla al paso '" + partes[3] + "' inválida");
+            System.out.println("Error: Casilla al paso '" + partes[3] + "' invalida");
             return false;
         }
         
@@ -49,7 +44,7 @@ public class FENValidator {
                 return false;
             }
         } catch (NumberFormatException e) {
-            System.out.println("Error: Halfmove clock debe ser un número entero");
+            System.out.println("Error: Halfmove clock debe ser un numero entero");
             return false;
         }
         
@@ -60,7 +55,7 @@ public class FENValidator {
                 return false;
             }
         } catch (NumberFormatException e) {
-            System.out.println("Error: Fullmove number debe ser un número entero");
+            System.out.println("Error: Fullmove number debe ser un numero entero");
             return false;
         }
         
@@ -85,7 +80,7 @@ public class FENValidator {
                 } else if (piezasValidas.indexOf(c) != -1) {
                     total++;
                 } else {
-                    System.out.println("Error: Carácter '" + c + "' inválido en fila " + (i+1));
+                    System.out.println("Error: Caracter '" + c + "' invalido en fila " + (i+1));
                     return false;
                 }
             }

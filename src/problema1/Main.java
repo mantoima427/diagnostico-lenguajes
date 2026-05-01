@@ -12,8 +12,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        System.out.println("=== PROBLEMA 1: ANALIZADOR LÉXICO ===");
-        System.out.print("Ingrese expresión aritmética: ");
+        System.out.println("=== PROBLEMA 1: ANALIZADOR LEXICO ===");
+        System.out.print("Ingrese expresion aritmetica: ");
         String expresion = scanner.nextLine();
         
         Lexer lexer = new Lexer(expresion);
@@ -25,9 +25,9 @@ public class Main {
         }
         
         if (Lexer.parentesisBalanceados(tokens)) {
-            System.out.println("\nPARÉNTESIS BALANCEADOS.");
+            System.out.println("\nPARENTESIS BALANCEADOS.");
         } else {
-            System.out.println("\nPARÉNTESIS NO BALANCEADOS.");
+            System.out.println("\nPARENTESIS NO BALANCEADOS.");
         }
         
         scanner.close();
