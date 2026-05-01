@@ -14,3 +14,10 @@ manifest.mf
 # Carpetas de salida
 dist/
 build/
+
+# Archivos de NetBeans
+nbproject/
+build/
+build.xml
+manifest.mf
+dist/
